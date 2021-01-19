@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: test
+          uri: https://www.google.com.br
+          predicates:
+            - Path=/test
+  codec:
+    max-in-memory-size: 10MB
